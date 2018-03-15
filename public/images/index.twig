@@ -1,0 +1,29 @@
+
+<html>
+<head>
+  <title>salud en tacna</title>
+</head>
+<div>
+</div>
+<body>
+  <div>
+    <h1>BIENVENIDOS A SALUD EN TACNA</h1>
+  </div>
+  <div>
+    <h2>lista de dentistas:</h2>
+    {% for clinicas in clinicas %}
+    <h3>{{ clinicas.nombre }}</h3>
+    <p>DIRECCION:</p><h4>{{ clinicas.ubicacion }}</h4>
+    <p>EMAIL:</p><h4>{{ clinicas.email }}</h4>
+    <p>HORARIO:</p><h4>{{ clinicas.horario }}</h4>
+    <p>CELULAR:</p><h4>{{ clinicas.celular }}</h4>
+    <p>WEBSITE:</p><h4>{{ clinicas.website }}</h4>
+    <p>facebook:</p><h4>{{ clinicas.facebook }}</h4>
+    <div class="blog-post-content">
+      <img src="images/JOEL2.jpg" alt="">
+    </div>
+    {% endfor %}
+  </div>
+  <div><a href="{{ 'admin'| url }}">admin<a></div>
+</body>
+</html>

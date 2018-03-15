@@ -1,0 +1,32 @@
+.interior{ display:none; } /* oculta las listas anidadas */
+  input:checked ~ ul{display:block;}
+  #contenido > div {
+  display:none;
+  }
+
+  /* reglas para los diferentes checkboxes y su div asociado */
+  #tab1:checked ~ #contenido #contenido1 {
+  display:block;
+  } 
+
+  #tab2:checked ~ #contenido #contenido2 {
+  display:block;
+  }
+
+  #tab3:checked ~ #contenido #contenido3 {
+  display:block;
+  }
+  
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    }
+    .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

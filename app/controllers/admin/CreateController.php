@@ -1,0 +1,28 @@
+<?php
+namespace App\controllers\Admin;
+class CreateController{
+
+  public function getCreate(){
+
+      return render('../views/admin/insert_clinica.php');
+  }
+
+  public function postCreate(){
+    global $pdo;
+    $sql = 'INSERT INTO clinicas (nombre, ubicacion, horario, celular, email, website,facebook) VALUES (:nombre, :ubicacion, :horario, :celular,:email,:website,:facebook)';
+    $query = $pdo->prepare($sql);
+    $result=$query->execute([
+    'nombre'=>$_POST['nombre'],
+    'ubicacion'=>$_POST['ubicacion'],
+    'horario'=>$_POST['horario'],
+    'celular'=>$_POST['celular'],
+    'email'=>$_POST['email'],
+    'website'=>$_POST['website'],
+    'facebook'=>$_POST['facebook']
+  ]);
+
+  return render('../views/admin/index.php',['result'->$result]);
+  }
+
+}
+ ?>
