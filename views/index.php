@@ -13,41 +13,7 @@
 
     <script type="text/JavaScript" src="../views/js/menu.js"></script>
     <script src="../views/js/jquery-2.1.4.min.js" type="text/javascript"></script>
-    <script>
-    $(document).ready(function(){
-    $("#spa").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "spa"});
-    });
-
-    $("#dentista").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "dentista"});
-    });
-
-
-    $("#optica").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "optica"});
-    });
-
-
-    $("#clinica").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "clinica"});
-    });
-
-    $("#medicina").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "medicina"});
-    });
-
-    $("#tomografia").click(function(evento){
-      evento.preventDefault();
-          $("#destino").load("../views/prueba.php" , {tipo: "tomografia"});
-    });
-    })
-    </script>
+    <script src="../views/js/opcion.js" type="text/javascript"></script>
     <script languaje="Javascript">
 
     function info(capa,enlace)
@@ -62,24 +28,38 @@
     <style type="text/css">div.cp_oculta{display: none;}</style>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="../views/estilos/masinformacion.css" rel="stylesheet" title="Default Style">
-
+      </head>
+      <header style="width: 100%;
+      position: fixed;
+      z-index: 10;">
     <div class="topnav" id="myTopnav">
         <a href="index.php" class="active">SERVICIOS DE SALUD<br>Bienvenido</a>
+
+        <meta name=”clinicastacna” content=”clinicasentacna”/>
         <a  id="dentista">ODONTOLOGOS<br>Tacna</a>
+
+        <meta name=”clinicastacna” content=”saludentacna”/>
         <a  id="spa">SPA'S<br>Tacna</a>
+
+        <meta name=”clinicastacna” content="spaentacna"”/>
         <a  id="clinica">CLINICAS<br>Tacna</a>
         <a  id="optica">OPTICAS<br>Tacna</a>
+
+        <meta name=”clinicastacna” content=”opticatacna”/>
         <a  id="tomografia">TOMOGRAFIA<br>Tacna</a>
         <a  id="medicina">MEDICINA ESTETICA<br>Tacna</a>
         <a href="javascript:void(0);" class="menu" onclick="menu()">&#9776;</a>
       </div>
-    </head>
+    </header>
+    <br><br>
     <body style="background-color:#F0F8FF;">
     <div class="container">
         <div class="row">
             <!--la parte de publicidad-->
             <br>
-            <div class="col-md-2">
+            <div class="col-md-2" style="
+            position: fixed; left:10px;
+            ">
                     <div class="slider">
                             <ul>
                                 <li>
@@ -119,7 +99,9 @@
 
             </div>
         <!--la parte de listado-->
-                <div class="col-md-7" id="destino">
+                <div class="col-md-7" id="destino" style="
+                left:180px;
+                ">
                     <link href="../views/estilos/lista.css" rel="stylesheet" title="Default Style">
                     <!-- Contenedor -->
                     <div class="pricing-wrapper clearfix">
@@ -278,7 +260,9 @@
                     </div>
                 </div>
             <!--la parte de links de paginas-->
-                <div  class="col-md-3">
+                <div  class="col-md-3" style="
+                position: fixed; left:950px;
+                ">
                     <div class="slider">
                         <ul>
                             <li>

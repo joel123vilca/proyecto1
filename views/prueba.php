@@ -103,7 +103,7 @@ function info(capa,enlace)
                                   <!--google maps-->
 
                                     <div class="google-maps">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12698.017302765014!2d-5.924386855443038!3d37.28317952472348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12705c945f7355%3A0x1f6735c306757c59!2sDos+Hermanas%2C+Sevilla%2C+Espa%C3%B1a!5e0!3m2!1ses!2s!4v1387797719272" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                                    <iframe src="https://www.google.com.pe/maps/place/Dentisur/@-18.0206955,-70.2582227,14.83z/data=!4m5!3m4!1s0x0:0xa40cd6681c4d1449!8m2!3d-18.0195917!4d-70.2572995" width="600" height="450" frameborder="0" style="border:0"></iframe>
                                     </div>
                                   <!--Termina google maps-->
                                 </div>

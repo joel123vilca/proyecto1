@@ -26,16 +26,16 @@
 
 /* Agregue una clase activa para resaltar la página actual */
 .active {
-    background-color:#6495ED;
+    background-color:blue;
     color: white;
 }
 
-/* 
+/*
 Ocultar el enlace que debe abrirse y cerrar el topnav en pantallas pequeñas */
 .topnav .menu {
     display: none;
 }
-/* 
+/*
 Cuando la pantalla tiene menos de 600 píxeles de ancho, oculte todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
