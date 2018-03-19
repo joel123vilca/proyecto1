@@ -26,7 +26,7 @@
 
 /* Agregue una clase activa para resaltar la página actual */
 .active {
-    background-color:blue;
+    background-color:#ddd;
     color: white;
 }
 

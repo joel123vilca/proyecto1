@@ -7,7 +7,7 @@
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
-    <link href="../views/estilos/estylo.css" rel="stylesheet" title="Default Style">
+
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -32,8 +32,10 @@
       <header style="width: 100%;
       position: fixed;
       z-index: 10;">
+        <link href="../views/estilos/estylo.css" rel="stylesheet" title="Default Style">
     <div class="topnav" id="myTopnav">
-        <a href="index.php" class="active">SERVICIOS DE SALUD<br>Bienvenido</a>
+
+        <a href="index.php" class="active" style="background-color:#2E86C1;">SERVICIOS DE SALUD<br>Bienvenido</a>
 
         <meta name=”clinicastacna” content=”clinicasentacna”/>
         <a  id="dentista">ODONTOLOGOS<br>Tacna</a>
