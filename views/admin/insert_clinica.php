@@ -59,39 +59,37 @@ input:focus {
   }
 }
 </style>
-<form class="form1" action="">
-    <label for="Name" class="first-name">Nombre:</label>
-    <input id="Name" name="nombre" type="text">
-
-    <label for="ubicacion" class="last-name">Ubicacion:</label>
+<form class="form1" method="post">
+    <label for="nombre" class="nombre">Nombre:</label>
+    <input id="nombre" name="nombre" type="text">
+    <label for="ubicacion" class="ubicacion">Ubicacion:</label>
     <input id="ubicacion" name="ubicacion"  type="text">
-
-    <label for="job">Horario:</label>
-    <input id="job" name="horario"  type="text">
-
-    <label for="age">Email:</label>
-    <input id="age" name="email" type="email">
-
-    <label for="email">Celular:</label>
-    <input id="email" name="celular" type="text">
-
+    <label for="horario">Horario:</label>
+    <input id="horario" name="horario"  type="text">
+    <label for="email">Email:</label>
+    <input id="email" name="email" type="email">
+    <label for="celular">Celular:</label>
+    <input id="celular" name="celular" type="text">
     <label for="website">website:</label>
     <input id="website" name="website" type="text">
     <label for="facebook">Facebook:</label>
     <input id="facebook" name="facebook" type="text">
+    <label for="mapa">Google_maps:</label>
+    <input id="mapa" name="mapa" type="text">
+    <label for="tipo">Tipo_clinica:</label>
+    <select name="tipo">
+      <option value="dentista">Dentista</option>
+      <option value="optica">Optica</option>
+      <option value="medicina">Medicina</option>
+      <option value="tomografia">Tomografia</option>
+      </select>
+    <label for="imagen">subir foto de Perfil</label>
+    <input type="file" name="imagen" id="imagen">
 
-        <label for="upload">subir foto de Perfil</label>
-        <input type="file" name="" id="upload">
-  
     <br>
     <button>Submit</button>
 </form>
-
 </div>
 <div class="col-md-2">
-
-
-
 </div>
-http://www.codedrinks.com/simple-galeria-en-php-y-mysql/
 </html>

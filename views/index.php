@@ -3,7 +3,6 @@
 <html>
     <title>SALUD EN TACNA</title>
     <link rel="shortcut icon" href="images/icono.png" />
-
     <head>
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
@@ -223,7 +222,9 @@
                                                               <!--Termina google maps-->
                                                             </div>
                                                             <div id="contenido3">
-                                                              <p>Contenido 3</p>
+
+                                                              <table  style="width: 100%;
+                                                              border: 1px solid #000;">
                                                               <?php
 
                                                               $query = $pdo->prepare("SELECT * FROM clinicas, promociones WHERE clinicas.id = promociones.id_clinicas AND promociones.id_clinicas = '$id'");
@@ -231,12 +232,31 @@
                                                               while ( $row = $query->fetch(\PDO::FETCH_ASSOC))
                                                               {
                                                               ?>
-                                                              <ul>
-                                                                <li><p>precios :</p><? echo $row['promocion'];?></li>
-                                                              </ul>
+                                                              <tr>
+                                                                <td class="promotd">comentario</td><td class="promo">S/.<? echo $row['promocion'];?></td>
+                                                              </tr>
                                                                 <?
                                                               } ?>
-                                                              <p>promocion</p>
+                                                            </table>
+                                                            <style>
+                                                            .promotd{
+                                                              width: 70%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+                                                            }
+                                                            .promo{
+                                                              width: 30%;
+   text-align: center;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   font size:3;
+   font-weight: bold;
+   color:#117A65;
+                                                            }
+                                                            </style>
                                                             </div>
                                                           </div>
                                                         </div>

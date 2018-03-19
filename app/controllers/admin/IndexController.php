@@ -11,6 +11,4 @@ class IndexController{
     return render('../views/admin/index.php', ['clinicas'=>$clinicas]);
   }
 }
-
-
  ?>
