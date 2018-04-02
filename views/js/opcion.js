@@ -1,33 +1,33 @@
 $(document).ready(function(){
 $("#spa").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "spa"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "spa"});
 });
 
 $("#dentista").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "dentista"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "dentista"});
 });
 
 
 $("#optica").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "optica"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "optica"});
 });
 
 
 $("#clinica").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "clinica"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "tomografia"});
 });
 
 $("#medicina").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "medicina"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "spa"});
 });
 
 $("#tomografia").click(function(evento){
   evento.preventDefault();
-      $("#destino").load("../views/prueba.php" , {tipo: "tomografia"});
+      $("#destino").load("../views/loyaut.php" , {tipo: "tomografia"});
 });
 })

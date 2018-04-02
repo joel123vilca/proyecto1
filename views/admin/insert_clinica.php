@@ -59,7 +59,7 @@ input:focus {
   }
 }
 </style>
-<form class="form1" method="post">
+<form class="form1" method="post" enctype="multipart/form-data">
     <label for="nombre" class="nombre">Nombre:</label>
     <input id="nombre" name="nombre" type="text">
     <label for="ubicacion" class="ubicacion">Ubicacion:</label>
@@ -84,7 +84,7 @@ input:focus {
       <option value="tomografia">Tomografia</option>
       </select>
     <label for="imagen">subir foto de Perfil</label>
-    <input type="file" name="imagen" id="imagen">
+    <input type="file" name="foto"  id="imagen">
 
     <br>
     <button>Submit</button>

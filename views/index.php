@@ -1,7 +1,11 @@
 
 <!DOCTYPE html>
 <html>
-    <title>SALUD EN TACNA</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>CLINICAS EN TACNA</title>
     <link rel="shortcut icon" href="images/icono.png" />
     <head>
         <meta name="keywords" content="salud en tacna, clinicas tacna, odontologos tacna, optica tacna">
@@ -15,7 +19,6 @@
     <script src="../views/js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="../views/js/opcion.js" type="text/javascript"></script>
     <script languaje="Javascript">
-
     function info(capa,enlace)
     {
         if (document.getElementById)
@@ -59,9 +62,7 @@
         <div class="row">
             <!--la parte de publicidad-->
             <br>
-            <div class="col-md-2" style="
-            position: fixed; left:10px;
-            ">
+            <div class="col-md-2">
                     <div class="slider">
                             <ul>
                                 <li>
@@ -83,27 +84,48 @@
                             <th class="th-publicidad">Circuitos Turisticos</th>
                         </tr>
                         <tr class="tr-publicidad">
-                            <td class="td-publicidad"><a href="#">City Tour Tacna</a></td>
+                            <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=35&Itemid=161">City Tour Tacna</a></td>
                         </tr>
 
                         <tr class="tr-publicidad">
-                                <td class="td-publicidad"><a href="#">Circuito Andino</a></td>
+                                <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=36&Itemid=162">Circuito Andino</a></td>
                         </tr>
 
                         <tr class="tr-publicidad">
-                                <td class="td-publicidad"><a href="#">Miculla Valle Viejo</a></td>
+                                <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=40&Itemid=163">Miculla Valle Viejo</a></td>
                         </tr>
 
                         <tr class="tr-publicidad">
-                                <td class="td-publicidad"><a href="#">Circuito Litoral</a></td>
+                                <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=38&Itemid=164">Circuito Litoral</a></td>
                         </tr>
                 </table>
+                <br>
+
+        <table class="table-publicidad">
+                <tr class="tr-publicidad">
+                    <th class="th-publicidad">OGD-TOUR TACNA</th>
+                </tr>
+                <tr class="tr-publicidad">
+                    <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=35&Itemid=161">City Tour Tacna</a></td>
+                </tr>
+
+                <tr class="tr-publicidad">
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=36&Itemid=162">Circuito Andino</a></td>
+                </tr>
+
+                <tr class="tr-publicidad">
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=40&Itemid=163">Miculla Valle Viejo</a></td>
+                </tr>
+
+                <tr class="tr-publicidad">
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=38&Itemid=164">Circuito Litoral</a></td>
+                </tr>
+        </table>
+
 
             </div>
         <!--la parte de listado-->
-                <div class="col-md-7" id="destino" style="
-                left:180px;
-                ">
+                <div class="col-md-7" id="destino" >
                     <link href="../views/estilos/lista.css" rel="stylesheet" title="Default Style">
                     <!-- Contenedor -->
                     <div class="pricing-wrapper clearfix">
@@ -122,40 +144,38 @@
                                         <th></th>
                                       <td WIDTH="80%" HEIGHT="80%" rowspan="6"><img src="<? echo $clinicas['img'];?>" alt="odontologias tacna" style="width:80%;"></td>
                                       <td><a href="URL-maps" target="_blank"><img alt="ubicame en tacna" height="32" src="images/direccion.png" title="sígueme por Correo" width="32" /></a></td>
-                                      <td><a><h5><? echo $clinicas['ubicacion']; ?><a></h5></td>
+                                      <td><a><? echo $clinicas['ubicacion']; ?></a></td>
                                     </tr>
                                     <tr>
                                       <th></th>
                                       <td><a href="URL-maps" target="_blank"><img alt="odontologias tacna" height="32" src="images/telefono.png" title="sígueme por Correo" width="32" /></a></td>
-                                      <td><h5><? echo $clinicas['celular']; ?></h5></td>
+                                      <td><? echo $clinicas['celular']; ?></td>
                                     </tr>
                                     <tr>
                                       <th></th>
-                                      <td><a href="URL-maps" target="_blank"><img alt="ubicame en tacna" height="32" src="images/usuario.png" title="sígueme por Correo" width="32" /></a></td>
-                                      <td><h5><? echo $clinicas['horario']; ?></h5></td>
                                     </tr>
 
                                     <tr>
                                         <th></th>
-                                        <td><a href="URL-Correo" target="_blank"><img alt="sígueme por Correo" height="32" src="images/logo-gmail.png" title="sígueme por Correo" width="32" /></a>
+                                        <td><a href="URL-Correo" target="_blank"><img alt="clinicas tacna" height="32" src="images/logo-gmail.png" title="sígueme por Correo" width="32" /></a>
                                             </td>
-                                        <td><a><h5><? echo $clinicas['email']; ?></h5></a></td>
+                                        <td><a><? echo $clinicas['email']; ?></a></td>
                                     </tr>
                                     <tr>
                                         <th></th>
-                                        <td><a href="URL-web" target="_blank"><img alt="sígueme por Correo" height="32" src="images/mundo-en-red.png" title="sígueme por Correo" width="32" /></a></td>
-                                        <td><a><h5><? echo $clinicas['website']; ?></h5></a></td>
+                                        <td><a href="#" target="_blank"><img alt="clinicas en tacna" height="32" src="images/mundo-en-red.png" title="sígueme por Correo" width="32" /></a></td>
+                                        <td><a target="_blank" href="<? echo $clinicas['website']; ?>" ><? echo $clinicas['website']; ?></a></td>
                                     </tr>
 
                                     <tr>
                                         <th></th>
-                                        <td><a href="URL-FACEBOOK" target="_blank"><img alt="siguenos en facebook" height="32" src="images/facebook-logo.png" title="siguenos en facebook" width="32" /></a></td>
-                                        <td><a>facebook</a></td>
+                                        <td><a href="URL-FACEBOOK" target="_blank"><img alt="imagen tacna" height="32" src="images/facebook-logo.png" title="siguenos en facebook" width="32" /></a></td>
+                                        <td><a target="_blank" href="<? echo $clinicas['facebook']; ?>" >facebook</a></td>
                                     </tr>
                                 </table>
                                 <div class="table-buy">
                                       <?php $id =$clinicas['id'];?>
-                                    <a href="javascript:info('<?php echo $id; ?>');" class="pricing-action">mas informacion</a>
+                                    <a href="javascript:info('<?php echo $id; ?>');" class="pricing-action">Ver Mas</a>
                                     <div class="cp_oculta" id="<?php echo $id; ?>">
                                               <table BORDER WIDTH="100%" class="tabla-info">
                                                   <tr>
@@ -173,7 +193,7 @@
                                                               <p class="left">
                                                                   <div class="w3-content w3-display-container">
                                                                     <?php
-                                                                      include_once '../views/config.php';
+                                                                      include '../config.php';
                                                                       $query = $pdo->prepare("SELECT * FROM clinicas, galeria WHERE clinicas.id = galeria.id_clinicas AND galeria.id_clinicas = '$id'");
                                                                       $query->execute();
                                                                       while ( $imagenes = $query->fetch(\PDO::FETCH_ASSOC))
@@ -192,7 +212,7 @@
                                                               <!--google maps-->
 
                                                                 <div class="google-maps">
-                                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12698.017302765014!2d-5.924386855443038!3d37.28317952472348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12705c945f7355%3A0x1f6735c306757c59!2sDos+Hermanas%2C+Sevilla%2C+Espa%C3%B1a!5e0!3m2!1ses!2s!4v1387797719272" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                                                                <iframe src="<? echo $clinicas['mapa'];?>" width="600" height="450" frameborder="0" style="border:0"></iframe>
                                                                 </div>
                                                                 <?php
 
@@ -262,9 +282,7 @@
                     </div>
                 </div>
             <!--la parte de links de paginas-->
-                <div  class="col-md-3" style="
-                position: fixed; left:950px;
-                ">
+                <div  class="col-md-3" >
                     <div class="slider">
                         <ul>
                             <li>
@@ -296,13 +314,13 @@
                  <br>
                  <table class="table-publicidad">
                         <tr class="tr-publicidad">
-                            <th class="th-publicidad">visitanos!</th>
+                            <th class="th-publicidad">Visitanos!</th>
                         </tr>
                         <tr class="tr-publicidad">
-                                <td class="td-publicidad"><a title="turismo" href="http://www.saludentacna.com"><img src="images/agencias_tacna.jpg" alt="agencias"></a></td>
+                                <td class="td-publicidad"><a title="turismo" target="_blank" href="http://www.saludentacna.com"><img src="images/agencias_tacna.jpg" alt="agencias"></a></td>
                         </tr>
                         <tr class="tr-publicidad">
-                                <td class="td-publicidad"><img src="images/fotos_tacna.jpg" alt="fotos de tacna"></td>
+                                <td class="td-publicidad"><a title="turismo" href="http://www.fotosentacna.com"><img src="images/fotos_tacna.jpg" alt="fotos de tacna"></a></td>
                         </tr>
 
                         <tr class="tr-publicidad">

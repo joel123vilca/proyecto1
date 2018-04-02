@@ -28,13 +28,9 @@ $router->get('/admin/create', function(){
 
 $router->post('/admin/create', function() use  ($pdo){
 
-
-   $nombre1 = $_FILES['imagen']['name'];
-   $cd=$_FILES['imagen']['tmp_name'];
-   $ruta = "images/". $_FILES['imagen']['name'];
-   $destino = "images/".$nombre1;
-   $enviar = move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
-
+    $destino = 'images/';
+    $imagen_subida = $destino .basename($_FILES['foto']['name']);
+    $guardar=move_uploaded_file($_FILES['foto']['tmp_name'],$imagen_subida);
 
   $sql = 'INSERT INTO clinicas (nombre, ubicacion, horario, celular, email, website, facebook, img, mapa, tipo) VALUES (:nombre, :ubicacion, :horario, :celular,:email,:website,:facebook,:img,:mapa,:tipo)';
   $query = $pdo->prepare($sql);
@@ -46,12 +42,12 @@ $router->post('/admin/create', function() use  ($pdo){
   'email'=>$_POST['email'],
   'website'=>$_POST['website'],
   'facebook'=>$_POST['facebook'],
-  'img'=>$_POST['imagen'],
+  'img'=>$imagen_subida,
   'mapa'=>$_POST['mapa'],
   'tipo'=>$_POST['tipo']
   ]);
 
-  return render('../views/admin/insert_clinica.php',['result'->$result]);
+  return render('../views/admin/insert_clinica.php');
 });
 
 $router->controller('/admin/post', App\controllers\Admin\PostController::class);
