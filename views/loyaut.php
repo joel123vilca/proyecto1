@@ -117,13 +117,10 @@
                                                                       while ( $imagenes = $query->fetch(\PDO::FETCH_ASSOC))
                                                                       {
                                                                       ?>
-                                                                        <img class="mySlides" src="<? echo $imagenes['imagenes'];?>" style="width:100%">
+                                                                        <img  src="<? echo $imagenes['imagenes'];?>" style="width:40%">
                                                                       <?} ?>
-                                                                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                                                                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                                                                    </div>
+                                                                        </div>
                                                               </p>
-                                                              <script type="text/JavaScript" src="../views/js/masinformacion.js"></script>
 
                                                           </div>
                                                             <div id="contenido2">
@@ -132,15 +129,7 @@
                                                                 <div class="google-maps">
                                                                 <iframe src="<? echo $clinicas['mapa'];?>" width="600" height="450" frameborder="0" style="border:0"></iframe>
                                                                 </div>
-                                                                <?php
 
-                                                                $query = $pdo->prepare("SELECT * FROM clinicas, promociones WHERE clinicas.id = promociones.id_clinicas AND promociones.id_clinicas = '$id'");
-                                                                $query->execute();
-                                                                while ( $row = $query->fetch(\PDO::FETCH_ASSOC))
-                                                                {
-                                                                 echo $row['promocion'];
-                                                                }
-                                                                ?>
                                                               <!--Termina google maps-->
                                                             </div>
                                                             <div id="contenido3">

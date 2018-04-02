@@ -106,19 +106,19 @@
                     <th class="th-publicidad">OGD-TOUR TACNA</th>
                 </tr>
                 <tr class="tr-publicidad">
-                    <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=35&Itemid=161">City Tour Tacna</a></td>
+                    <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=173&Itemid=138">¿QUE ES LA OGD?</a></td>
                 </tr>
 
                 <tr class="tr-publicidad">
-                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=36&Itemid=162">Circuito Andino</a></td>
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=173&Itemid=138">MISION</a></td>
                 </tr>
 
                 <tr class="tr-publicidad">
-                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=40&Itemid=163">Miculla Valle Viejo</a></td>
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=173&Itemid=138">VISION</a></td>
                 </tr>
 
                 <tr class="tr-publicidad">
-                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=38&Itemid=164">Circuito Litoral</a></td>
+                        <td class="td-publicidad"><a target="_blank" href="http://www.turismotacna.com/index.php?option=com_content&view=article&id=173&Itemid=138">¿QUE HACEMOS?</a></td>
                 </tr>
         </table>
 
@@ -189,9 +189,9 @@
                                                           <label for="tab3">OFERTAS</label>
                                                           <div id="contenido">
                                                             <div id="contenido1">
+                                                              <p>
+                                                                  <div>
 
-                                                              <p class="left">
-                                                                  <div class="w3-content w3-display-container">
                                                                     <?php
                                                                       include '../config.php';
                                                                       $query = $pdo->prepare("SELECT * FROM clinicas, galeria WHERE clinicas.id = galeria.id_clinicas AND galeria.id_clinicas = '$id'");
@@ -199,13 +199,11 @@
                                                                       while ( $imagenes = $query->fetch(\PDO::FETCH_ASSOC))
                                                                       {
                                                                       ?>
-                                                                        <img class="mySlides" src="<? echo $imagenes['imagenes'];?>" style="width:100%">
+                                                                        <img  src="<? echo $imagenes['imagenes'];?>" style="width:40%">
                                                                       <?} ?>
-                                                                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                                                                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                                                                    </div>
+
+                                                                      </div>
                                                               </p>
-                                                              <script type="text/JavaScript" src="../views/js/masinformacion.js"></script>
 
                                                           </div>
                                                             <div id="contenido2">
@@ -214,16 +212,7 @@
                                                                 <div class="google-maps">
                                                                 <iframe src="<? echo $clinicas['mapa'];?>" width="600" height="450" frameborder="0" style="border:0"></iframe>
                                                                 </div>
-                                                                <?php
-
-                                                                $query = $pdo->prepare("SELECT * FROM clinicas, promociones WHERE clinicas.id = promociones.id_clinicas AND promociones.id_clinicas = '$id'");
-                                                                $query->execute();
-                                                                while ( $row = $query->fetch(\PDO::FETCH_ASSOC))
-                                                                {
-                                                                 echo $row['promocion'];
-                                                                }
-                                                                ?>
-                                                              <!--Termina google maps-->
+                                                                <!--Termina google maps-->
                                                             </div>
                                                             <div id="contenido3">
 
